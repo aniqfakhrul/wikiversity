@@ -1,0 +1,71 @@
+@charset "UTF-8";html,body{height:100%}
+a,a:hover{
+  color:inherit;
+  text-decoration:none
+}
+body{background-color:#f6f5f2;
+  margin:0 auto;
+  min-width:320px;
+  min-height:480px;
+  position:relative;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;
+  line-height:1.5;
+  color:#555;
+  padding-top:54px;
+  text-rendering:optimizelegibility;
+  width:100%;
+  overflow-x:hidden
+  }.wrapper{max-width:1440px;margin:auto;padding:0;position:relative}
+  header{z-index:10;position:fixed;left:0;right:0;top:0;height:44px;background-color:#00aeef;color:white;line-height:44px;width:100%}
+  header .wrapper{height:44px;line-height:44px}
+  header .brand{display:inline-block;margin:0 auto;float:left;padding:0 0 0 10px;max-width:245px;line-height:44px;position:relative}
+  header .brand img.mashlogo{max-width:235px;max-height:22.5px;display:inline-block;vertical-align:top;position:relative;top:8px}
+  header .brand img.mashlogo.dark{display:none}
+  header .brand
+  .editions{display:none;position:absolute;list-style-type:none;background-color:#ddf0f9;border-bottom:5px solid #00aeef;margin:0 0 0 -10px;padding:0;width:100%}
+  header .brand .editions li{margin:0;padding:0}
+  header .brand .editions li a{padding:2px 25px;color:#00aeef;font-size:13px;font-weight:bold}
+  header .brand .editions li a:hover{color:#0698dd}
+  header .hamburger{display:inline-block;float:left;cursor:pointer;vertical-align:top;background-color:#0076a3;text-align:center;width:28px;height:28px;padding:8px}
+  header .hamburger svg{width:28px;height:28px}
+  #topmenu,header .social{list-style-type:none;margin:0;padding:0}
+  nav#navmenu{display:inline-block}
+  nav#navmenu li{display:inline-block;padding:0;line-height:44px;transition:background-color .2s ease}
+  nav#navmenu li>a{display:block;padding:15px 15px 15px 15px;line-height:13px;transition:background-color .2s ease;font:12px "ProximaNovaRegular",Arial,sans-serif;text-transform:uppercase}
+  nav#navmenu li>a:hover{background-color:#32befb;background-color:#c7e6f5;color:#00aeef}
+  header .social li:hover{background-color:#32befb}header .social{display:inline-block;float:right}
+  header .social li{display:none;height:44px;padding:0;position:relative}
+  header .social #topsearch{display:inline-block}
+  header .dropdown{display:none;position:absolute;line-height:1.5}
+  #header2{position:absolute;left:0;top:-44px;transition:all .2s;width:100%;z-index:3;background-color:#FFF;box-shadow:#ccc 0 0 12px;display:block !important}
+  #header2.descended{top:0}
+  #header2 ul.sharer{display:none}
+  #header2 ul.sharer a{margin-right:10px;line-height:32px}
+  #header2 ul.sharer svg{height:32px;width:32px}
+  #subnavmenu{display:none;z-index:1;position:absolute;top:44px;left:0;width:100%;background-color:#ddf0f9;border-bottom:5px solid #00aeef;color:white;border-bottom:5px solid #00aeef;height:265px;max-height:0;overflow:hidden;transition:.2s}
+  #subnavmenu.active{display:block;max-height:265px}
+  #subnavcnt progress{margin:50px 10% 50px 20%;font-size:30px;height:30px;display:block;width:70%}
+  #subnavcnt ul{margin:15px 0 35px 190px;list-style-type:none}#subnavcnt li{width:200px;padding:10px;display:inline-block;vertical-align:top}
+  #subnavcnt li img{width:100%;max-width:100%;object-fit:cover;min-height:118px;max-height:130px}
+  #subnavcnt li .caption{font-size:14px;color:#333;line-height:18px;font-weight:bold;font-family:MuseoSlabRegular,serif;display:block}
+  #subnavcnt li .caption:hover{text-decoration:underline}
+  #content,.content,.hero,.breadcrumb{position:relative}
+  .billboard{margin-bottom:10px}
+  .breadcrumb{padding:15px 30px 12px;box-sizing:border-box;background:white;display:block;z-index:2;white-space:nowrap}
+  .breadcrumb>a{font:bold 18px Arial,sans-serif;color:#8a8c8e}
+  .breadcrumb .follow{display:none;line-height:43px;padding-bottom:4px;position:absolute;right:0;top:0;width:339px;z-index:5}
+  .breadcrumb:after{content:"";position:absolute;bottom:-24px;left:0;height:24px;width:100%;z-index:2;background:url(../breadcrumb.png) bottom left repeat-x}
+  .content.wrapper{table-layout:fixed;display:table;background:#fff;overflow-x:hidden;width:100%}
+  #content{display:table-cell;position:relative}
+  #content a{color:#00aeef;text-decoration:none}
+  #content div.sidebar{background-color:#e6e7e8;min-width:300px;max-width:400px}
+  .content .sidebar{display:none;position:relative;background-color:#e6e7e8}
+  #content .article,#content .sidebar{display:table-cell;position:relative;vertical-align:top;border-bottom:1px solid #e0e0e0;vertical-align:top}
+  #content .sidebar{background-color:#e6e7e8}@media(max-width:930px){header .social svg{max-width:40px}
+  nav#navmenu{display:block;position:fixed;left:0;width:0;overflow:hidden;max-width:200px;background-color:#535a63;height:100%;top:44px;transition:all .2s}
+  nav#navmenu.active{width:60%}
+  nav#navmenu li{display:block;border-bottom:1px solid #656b74}
+  nav#navmenu li>a{padding:17px;font-size:13px}
+  header .social{position:absolute;right:0;top:0}}@media(min-width:930px){#navmenu a.subnav:after{content:"\25be";display:inline-block;position:relative;top:-1px;left:2px;font-size:15px;font-family:"Arial Unicode MS","Arial Unicode",sans-serif;line-height:13px;vertical-align:middle;-webkit-font-smoothing:antialiased}
+  header .hamburger{display:none}header .brand{padding:0 25px;max-width:235px}
+  header .brand .editions{margin-left:-25px}}div.sb{margin-bottom:15px;background-color:#FFF;position:relative}div.sb .sbc{padding:12px 15px 30px}div.sb .topic{font-size:10px}div.sb a.title{display:block;color:#333;font-family:"MuseoSlabRegular",serif;font-size:15px;line-height:19px;-webkit-font-smoothing:antialiased;margin-bottom:18px}div.sb a.title:hover{text-decoration:underline}div.sb a.thumb img{display:block;margin-bottom:15px;width:100%;object-
